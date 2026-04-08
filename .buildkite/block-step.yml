@@ -1,6 +1,21 @@
-steps:
-  - block: ":incoming_envelope: generate"
-    submit: "This is not continue" 
-    # prompt: "Should we generate some numbers?"
-
-
+  - block: "Release"
+    prompt: "Fill out the details for release"
+    fields:
+      - text: "Release Name"
+        key: "release-name"
+        hint: "Think of a cool name for this release"
+      - text: "Changelog"
+        key: "release-notes"
+        required: false
+        hint: "List of what's changed in this release"
+      - select: "Type"
+        key: "release-type"
+        default: "beta"
+        options:
+          - label: "Beta"
+            value: "beta"
+          - label: "Stable"
+            value: "stable"
+  - command: release.sh
+    label: ":rocket:"
+>>>>>>> 3c761b2 (edited block-step tml with release prompt)
