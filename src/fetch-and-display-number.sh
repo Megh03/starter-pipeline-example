@@ -1,4 +1,4 @@
-```bash
+
 #!/bin/bash
 
 action=${1:-}
@@ -16,4 +16,4 @@ else
 fi
 echo
 echo 
-```
+
