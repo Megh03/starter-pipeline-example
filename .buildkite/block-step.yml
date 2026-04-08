@@ -1,0 +1,3 @@
+steps:
+  - block: ":incoming_envelope: generate"
+    prompt: "Should we generate some numbers?"
