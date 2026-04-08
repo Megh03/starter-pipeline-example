@@ -1,4 +1,4 @@
-# Buildkite Starter Pipeline Example
+## Buildkite Starter Pipeline Example
 
 [![Build status](https://badge.buildkite.com/f9b46d96710d254e34229ba68bb8797d0b8f1e64ac5abfecb9.svg?branch=main)](https://buildkite.com/buildkite/starter-pipeline-example/builds/latest?branch=main)
 [![Add to Buildkite](https://img.shields.io/badge/Add%20to%20Buildkite-14CC80)](https://buildkite.com/new)
