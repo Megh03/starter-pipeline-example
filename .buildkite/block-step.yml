@@ -1,27 +1,6 @@
-# steps:
-#   - block: ":incoming_envelope: generate"
-#     # prompt: "Should we generate some numbers?"
-
 steps:
-  - block: "Deploy To"
-    fields:
-      - select: "Regions"
-        key: "deploy-regions"
-        hint: "Which regions should we deploy this to? :earth_asia:"
-        required: true
-        multiple: true
-        default:
-          - "na"
-          - "eur"
-          - "asia"
-          - "aunz"
-        options:
-          - label: "North America"
-            value: "na"
-          - label: "Europe"
-            value: "eur"
-          - label: "Asia"
-            value: "asia"
-          - label: "Oceania"
-            value: "aunz"
+  - block: ":incoming_envelope: generate"
+    submit: "This is not continue" 
+    # prompt: "Should we generate some numbers?"
+
 
