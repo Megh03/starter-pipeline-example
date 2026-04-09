@@ -20,6 +20,6 @@ steps:
             value: "beta"
           - label: "Stable"
             value: "stable"
-  - command: release.sh
+  - command: echo "release.sh"
     label: ":rocket:"
 
