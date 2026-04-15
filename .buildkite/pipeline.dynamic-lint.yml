@@ -1,0 +1,14 @@
+steps:
+  - label: "🔍 Lint"
+    key: "lint"
+    command: "exit 1"
+    soft_fail: true
+
+  - wait:
+      continue_on_failure: true
+
+  - command: |
+      if [ $$(buildkite-agent step get "outcome" --step "lint") != "passed" ]; then
+        echo "steps:
+          - block: '⚠️ Lint failed'" | buildkite-agent pipeline upload
+      fi
